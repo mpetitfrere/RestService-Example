@@ -24,7 +24,7 @@
 
         function DoSquare() {
             var value = 2;
-            console.info("Hello DoSqaure");
+            console.info("DoSqaure");
 
             $.ajax({
                 url: "Service/Service1.svc/DoSquare",
