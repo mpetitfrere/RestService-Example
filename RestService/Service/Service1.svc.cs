@@ -22,5 +22,24 @@ namespace RestService.Service
         {
             return value * value;
         }
+        public int DoAddValues(AddValues addValues)
+        {
+            return addValues.Value1 + addValues.Value2;
+        }
+    }
+
+    public class AddValues
+    {
+        [DataMember]//Data Contract attr used to seralize data
+        public int Value1 { get; set; }
+        [DataMember]
+        public int Value2 { get; set; }
+
+        public AddValues()
+        {
+            Value1 = 0;
+            Value2 = 0;
+        }
+
     }
 }
